@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">Baccoon</string>
+    <string name="title_activity_signup">Signup</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="nameValidation">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="lblSignUP">Sign Up</string>
+    <string name="alreadyRegister">Already Registered?</string>
+    <string name="lblSignin">Signin</string>
+    <string name="signupWithFB">Sign up with</string>
+    <string name="lblFB">FACEBOOK</string>
+    <string name="lblVK">VK</string>
+    <string name="company">Company</string>
+    <string name="lblLogin">Login</string>
+    <string name="fogotPass">forgot your password ?</string>
+    <string name="loginWithFB">Login with</string>
+
+    <string name="facebook_app_id">976099572512383</string>
+    <!--519425394896004-->
+
+    <string name="lblSubmit">Submit</string>
+    <integer name="com_vk_sdk_AppId">5310803</integer>
+    <string name="title_activity_home">Home</string>
+    <string name="headerTitle_location">Where are you ?</string>
+    <string name="details_location_screen">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</string>
+    <string name="lblLocaton">Find Location</string>
+    <string name="lblUsing">Using</string>
+    <string name="lblUsingNetwork">Using network</string>
+    <string name="lblGPS">GPS</string>
+    <string name="lblCellID">cell Id / Wifi</string>
+    <string name="lblSetLocationmanually">Set Location Manually</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_filter">Filter</string>
+    <string name="from">From</string>
+    <string name="intValidation">0123456789</string>
+    <string name="to">To</string>
+    <string name="lblSearch">Search</string>
+
+
+    <string-array name="drawer_items">
+
+
+        <item>Home</item>
+        <item>My Baccoon</item>
+        <item>Sell</item>
+        <item>Favourites</item>
+        <item>Message</item>
+        <item>My Product</item>
+
+        <item>Notifications</item>
+        <item>About</item>
+        <item>Help</item>
+        <item>Logout</item>
+    </string-array>
+    <string name="title_activity_info">Information</string>
+    <string name="title_activity_sample">SampleActivity</string>
+    <string name="lblClear">Clear</string>
+    <string name="lblCurrentBal">Current Balance</string>
+    <string name="lblWhatYouAreSelling">What you are selling...</string>
+    <string name="hint_DescribeIt">Describe it...</string>
+    <string name="lblDeliveryOption">Delivery Options</string>
+    <string name="lblPutByBuyer">Put by buyer</string>
+    <string name="lblDHL">By DHL</string>
+    <string name="lblPOST">By Post Office</string>
+    <string name="title_activity_my_baccoon">MyBaccoonActivity</string>
+    <string name="lblsell">Sell</string>
+    <string name="deloptions">Delivery Options :</string>
+    <string name="savecontinue"><![CDATA[Save & Continue]]></string>
+
+
+
+
+
+
+
+
+
+
+        <string name="ext"><![CDATA[Save & Continue]]></string>
+    <string name="textValidation">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="nameSpaceValidation">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY Z</string>
+    <string name="noItemSoldError">No Item Sold</string>
+    <string name="passwordValidation">abcdefghijklmnopqrstuvwxyz!.@ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</string>
+
+    <string name="lblmakeanoffer">Make an offer</string>
+    <string name="sharewith">Share with</string>
+    <string name="lblPay">Pay</string>
+
+
+    <string name="rupeeSymbol">\u20B9</string>
+    <string name="rubleSymbol">\u20BD</string>
+    <string name="dollorSymbol">$</string>
+    <string name="lblCalculateAmount">Calculate Amount</string>
+    <string name="title_activity_temp">TempActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Alert_Message_beg">You have done last payment in</string>
+    <string name="Alert_Message_end">So if you change currency than your balance will be converted into</string>
+    <string name="Acra_msg">Crash Report</string>
+    <string name="numbers">0123456789</string>
+    <string name="card_nick_name_hint">Enter nick name</string>
+    <string name="credit_card_number_hint">Enter Credit Card number</string>
+    <string name="card_name_hint">Enter card holder name</string>
+    <string name="card_number_hint">Enter card number</string>
+</resources>
+
+
+
+

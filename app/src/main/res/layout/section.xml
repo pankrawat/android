@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:text="Find Offers Within 1 KM"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/sp_18"
+    android:layout_marginLeft="@dimen/marginSmall"
+    android:layout_marginRight="@dimen/marginSmall"
+    android:layout_marginBottom="@dimen/dp_6"
+    android:textColor="@color/white"
+    android:gravity="center"
+    android:padding="@dimen/marginSmall"
+    android:background="@color/orange"
+    android:id="@+id/section_text"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

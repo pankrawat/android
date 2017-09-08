@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    android:background="#ececec">
+
+  <LinearLayout
+
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+
+      android:layout_marginTop="@dimen/dp_10"
+      android:layout_marginLeft="@dimen/marginSmall"
+      android:layout_marginRight="@dimen/marginSmall"
+
+      android:gravity="center"
+      android:padding="@dimen/marginSmall"
+      android:orientation="horizontal"
+      >
+
+
+      <Spinner
+          android:id="@+id/spinerCategory"
+          android:layout_weight=".49"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+android:paddingTop="@dimen/dp_10"
+          android:paddingRight="@dimen/dp_10"
+          android:paddingLeft="@dimen/dp_10"
+
+
+
+          android:paddingBottom="@dimen/dp_10"
+          android:background="@drawable/spiner_filter_selector_fav"/>
+
+
+      <View
+
+
+          android:layout_width="15dp"
+          android:layout_height="10dp"
+          />
+   <Spinner
+          android:id="@+id/spinerPrice"
+          android:layout_weight=".49"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+
+       android:paddingTop="@dimen/dp_10"
+       android:paddingRight="@dimen/dp_10"
+       android:paddingLeft="@dimen/dp_10"
+
+
+
+       android:paddingBottom="@dimen/dp_10"
+
+          android:background="@drawable/spiner_filter_selector_fav"/>
+
+
+
+
+  </LinearLayout>
+
+
+
+    <RelativeLayout   android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView android:id="@+id/txtError" android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:text="No Product Found"
+    android:layout_centerInParent="true"
+    android:textSize="@dimen/sp_18"
+    android:textColor="@color/colorHint"
+    android:visibility="gone"
+    />
+
+    <GridView
+        android:id="@+id/gridview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:verticalSpacing="8dp"
+        android:horizontalSpacing="10dp"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/marginSmall"
+        android:layout_marginRight="@dimen/marginSmall"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_marginBottom="@dimen/marginSmall"
+        android:stretchMode="columnWidth" android:visibility="visible">
+
+    </GridView>
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/parentLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@color/white"
+
+   >
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:titleTextColor="@color/white"
+        android:subtitleTextColor="@color/white"
+        android:padding="0dp"
+
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+>
+
+
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/cross"
+            android:id="@+id/btnCancel"
+
+            android:scaleType="center"
+
+android:visibility="gone"
+
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/marginSmall"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/back"
+            android:id="@+id/btnBack"
+            android:layout_gravity="left"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       android:textColor="@color/white"
+            android:id="@+id/header"
+            android:text="Payment"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_18"
+            android:layout_marginLeft="@dimen/dp_26"
+            android:layout_gravity="left"
+
+
+            />
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/toolbar"
+            >
+
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabMode="fixed"
+                app:tabGravity="fill"
+                app:tabTextColor="@color/colorHint"
+                app:tabSelectedTextColor="@color/white"
+                app:tabBackground="@color/colorPrimary"
+                style="@style/MyCustomTabLayout"
+                app:tabIndicatorColor="@color/colorPrimaryDark"
+                app:tabTextAppearance="@style/MyCustomTabTextPayment"
+                />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+
+                android:background="#FFFFFF"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
+
+

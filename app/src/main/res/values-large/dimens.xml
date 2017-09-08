@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginLarge">25dp</dimen>
+    <dimen name="txtNormalSize">24sp</dimen>
+    <dimen name="marginSmall">10dp</dimen>
+    <dimen name="txtSmallSize">30sp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="marginLeftLarge">55dp</dimen>
+    <dimen name="marginLeftXLarge">70dp</dimen>
+
+</resources>

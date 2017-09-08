@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+  >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <RelativeLayout
+            android:id="@+id/imgLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.3">
+            <ImageView
+                android:id="@+id/backgroundProfilePic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:scaleType="fitXY"
+                android:src="@mipmap/bg" >
+
+            </ImageView>
+
+
+
+            <ImageView
+                android:id="@+id/gradiant"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+android:alpha=".6"
+                android:scaleType="fitXY"
+                android:src="@mipmap/gradient" >
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/productPic"
+                android:focusable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:minWidth="100dp"
+
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/dp_8"
+                android:src="@mipmap/camera" />
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="@dimen/dp_10"
+
+                android:src="@mipmap/back" />
+
+            <ImageView
+                android:id="@+id/btnDone"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/dp_6"
+                android:visibility="invisible"
+                android:src="@mipmap/done" />
+
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6.8"
+            android:background="@color/colorBg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:singleLine="true"
+                    android:padding="@dimen/dp_16"
+                    android:hint="@string/lblWhatYouAreSelling"
+                    android:textSize="@dimen/sp_16" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@color/colorLocation" />
+
+                <EditText
+                    android:id="@+id/txtDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="@dimen/dp_16"
+                    android:gravity="top"
+                    android:hint="@string/hint_DescribeIt"
+                    android:minLines="5"
+                    android:textSize="@dimen/sp_14"
+
+                    />
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@color/colorLocation" />
+
+
+                <Spinner
+                    android:id="@+id/spinerCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_16"
+                    android:background="@drawable/spiner_createsell_selector" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@color/colorLocation" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <Spinner
+                        android:id="@+id/SpinerCur_one"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:padding="@dimen/dp_16"
+                        android:paddingBottom="@dimen/marginSmall"
+                        android:background="@drawable/spiner_createsell_selector" />
+
+                    <View
+                        android:layout_width="1.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorLocation" />
+
+
+                    <EditText
+                        android:id="@+id/txtProductCost"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:textSize="@dimen/sp_16"
+                        android:maxLength="7"
+                        android:singleLine="true"
+                        android:background="@null"
+                        android:inputType="number"
+                        android:hint="Price"
+                        android:layout_weight="7" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@color/colorLocation" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBg"
+                    android:padding="@dimen/dp_16"
+                    android:text="@string/lblDeliveryOption"
+                    android:textSize="@dimen/sp_16" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:paddingLeft="@dimen/dp_16"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="@string/lblPutByBuyer"
+                        android:textSize="@dimen/sp_16" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.75"/>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3">
+
+                        <ToggleButton
+                            android:id="@+id/togglebuyer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginBottom="@dimen/dp_4"
+                            android:layout_marginTop="@dimen/dp_4"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/selector_toggle"
+                            android:textOff=""
+                            android:textOn=""/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@color/colorLocation" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/lblCurTwo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        android:text="INR"
+                        android:textColor="@color/vk_black" />
+
+                    <View
+                        android:layout_width="1.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorLocation" />
+
+
+                    <EditText
+                        android:id="@+id/txtDHL"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:textSize="@dimen/sp_16"
+                        android:maxLength="4"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:layout_weight="4.7"
+                        android:hint="@string/lblDHL" />
+
+                    <ToggleButton
+                        android:id="@+id/toggledhl"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:layout_marginBottom="@dimen/dp_4"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_weight="1.3"
+                        android:background="@drawable/toggle_selector"
+                        android:textOff=""
+                        android:textOn="" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@color/colorLocation" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/lblCurThree"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        android:text="INR"
+                        android:textColor="@color/vk_black" />
+
+                    <View
+                        android:layout_width="1.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorLocation" />
+
+
+                    <EditText
+                        android:id="@+id/txtPost"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:textSize="@dimen/sp_16"
+                        android:maxLength="4"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:layout_weight="4.7"
+                        android:hint="@string/lblPOST" />
+
+                    <ToggleButton
+                        android:id="@+id/togglepost"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_weight="1.3"
+                        android:background="@drawable/toggle_selector"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:layout_marginBottom="@dimen/dp_4"
+                        android:textOff=""
+                        android:textOn="" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@color/colorLocation" />
+
+                <TextView
+                    android:id="@+id/btnSell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="@dimen/dp_36"
+                    android:layout_marginLeft="@dimen/marginLeftXLarge"
+                    android:layout_marginRight="@dimen/marginLeftXLarge"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:background="@drawable/round_corner_border"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/marginSmall"
+                    android:paddingTop="@dimen/marginSmall"
+                    android:text="@string/lblsell"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txtNormalSize" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

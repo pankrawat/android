@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loc_bg"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/marginLeftXLarge"
+        android:layout_marginTop="@dimen/dp_10"></View>
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="left"
+        android:layout_marginBottom="@dimen/marginVerySamll"
+        android:layout_marginLeft="@dimen/marginLeftXLarge"
+        android:layout_marginRight="@dimen/dp_40"
+        android:layout_marginTop="@dimen/marginLarge"
+        android:text="@string/headerTitle_location"
+        android:textColor="@color/white"
+
+        android:textSize="30sp" />
+
+    <View
+        android:layout_width="50dp"
+
+        android:layout_height="2dp"
+        android:layout_marginLeft="@dimen/marginLeftXLarge"
+        android:background="@color/white"></View>
+
+
+
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+
+
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+
+            android:paddingBottom="@dimen/marginLarge">
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginLarge"
+                android:layout_marginTop="@dimen/marginLarge"></View>
+
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/marginLarge"
+                android:layout_marginTop="@dimen/marginLarge"></View>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/marginLarge"
+                android:layout_marginTop="@dimen/marginLarge"></View>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/marginLarge"
+                android:layout_marginTop="@dimen/marginLarge"></View>
+
+
+            <TextView
+                android:id="@+id/txtLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginLeftLarge"
+                android:layout_marginRight="@dimen/marginLeftLarge"
+                android:layout_marginTop="@dimen/marginLarge"
+                android:background="@drawable/only_bottom_border"
+                android:hint="@string/lblLocaton"
+
+
+
+                android:paddingBottom="@dimen/marginSmall"
+
+                android:singleLine="true"
+                android:textColor="@color/white"
+
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/txtNormalSize"
+
+
+                />
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/marginLeftLarge"
+                android:layout_marginRight="@dimen/marginLeftLarge"
+                android:layout_marginTop="@dimen/marginLeftXLarge"
+
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/btnManually"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginTop="@dimen/marginSmall"
+
+                    android:background="@drawable/round_corner_border"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/marginSmall"
+                    android:paddingTop="@dimen/marginSmall"
+                    android:text="@string/lblSetLocationmanually"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txtNormalSize" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnGPS"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/marginLeftLarge"
+                android:layout_marginRight="@dimen/marginLeftLarge"
+                android:layout_marginTop="@dimen/marginVerySamll"
+                android:background="@drawable/round_corner_border_forgotpass"
+
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+
+                    >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+
+                    android:paddingBottom="@dimen/marginSmall"
+                    android:paddingTop="@dimen/marginSmall"
+
+
+                    android:text="@string/lblUsing"
+                    android:textColor="@color/vk_black"
+                    android:textSize="@dimen/txtNormalSize" />
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+
+android:layout_marginLeft="@dimen/marginVerySamll"
+                        android:paddingBottom="@dimen/marginSmall"
+                        android:paddingTop="@dimen/marginSmall"
+
+
+                        android:text="@string/lblGPS"
+                        android:textColor="@color/vk_black"
+                        android:textSize="@dimen/txtNormalSize" />
+
+
+
+                </LinearLayout>
+</LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnWIFI"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/marginLeftLarge"
+                android:layout_marginRight="@dimen/marginLeftLarge"
+                android:layout_marginTop="@dimen/marginVerySamll"
+                android:background="@drawable/round_corner_border_forgotpass"
+
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+
+                    >
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+
+
+                        android:paddingBottom="@dimen/marginSmall"
+                        android:paddingTop="@dimen/marginSmall"
+
+
+                        android:text="@string/lblUsingNetwork"
+                        android:textColor="@color/vk_black"
+                        android:textSize="@dimen/txtNormalSize" />
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+
+                        android:paddingBottom="@dimen/marginSmall"
+                        android:paddingTop="@dimen/marginSmall"
+                        android:layout_marginLeft="@dimen/marginVerySamll"
+
+
+                        android:text="@string/lblCellID"
+                        android:textColor="@color/vk_black"
+                        android:textSize="@dimen/txtNormalSize" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

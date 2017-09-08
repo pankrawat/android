@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView
+    android:id="@+id/spinerText"
+    android:textSize="@dimen/sp_18"
+    android:textColor="@color/vk_black"
+    android:background="@color/white"
+    android:layout_margin="@dimen/marginVerySamll"
+    android:padding="@dimen/marginVerySamll"
+    android:text="dsjds"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content" />
+
+
+
+

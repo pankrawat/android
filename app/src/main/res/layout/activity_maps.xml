@@ -1,0 +1,102 @@
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <LinearLayout
+        android:id="@+id/toolbar_back"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_margin="@dimen/dp_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"/>
+        <TextView
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/dp_16"
+            android:text="Search"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+<fragment
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.baccoon.activity.MapsActivity" />
+    <AutoCompleteTextView
+        android:id="@+id/search_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/vk_black"
+        android:textSize="@dimen/sp_18"
+        android:hint="Search"
+        android:singleLine="true"
+        android:layout_margin="@dimen/dp_4"
+        android:background="@drawable/rect_border"
+        android:padding="@dimen/dp_8" />
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_26"
+        android:paddingRight="@dimen/dp_26"
+android:layout_alignBottom="@+id/map"
+android:layout_marginBottom="@dimen/marginLeftLarge"
+android:layout_centerHorizontal="true"
+        android:background="@drawable/round_corner_button"
+        android:layout_marginRight="@dimen/dp_14"
+        android:id="@+id/btnContinue" android:textSize="@dimen/sp_16"
+        android:text="CONTINUE" />
+
+
+
+    <!--<TextView-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:paddingTop="@dimen/dp_10"-->
+        <!--android:paddingBottom="@dimen/dp_10"-->
+        <!--android:paddingLeft="@dimen/dp_36"-->
+        <!--android:paddingRight="@dimen/dp_36"-->
+        <!--android:layout_alignBottom="@+id/map"-->
+        <!--android:layout_marginBottom="@dimen/marginLeftLarge"-->
+        <!--android:layout_alignLeft="@+id/map"-->
+        <!--android:background="@drawable/round_corner_button"-->
+        <!--android:layout_marginLeft="@dimen/dp_14"-->
+        <!--android:id="@+id/btnSkip" android:textSize="@dimen/sp_16"-->
+        <!--android:text="SKIP" />-->
+
+</RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_16"
+    android:paddingRight="@dimen/dp_16"
+    android:paddingTop="@dimen/dp_30">
+
+    <LinearLayout
+        android:id="@+id/layoutChat1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+
+        <LinearLayout
+            android:id="@+id/layoutprofile1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_weight="1.5">
+
+            <com.app.baccoon.utils.CircleImageView
+
+                android:id="@+id/imgprofile1"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_gravity="bottom"
+                android:src="@mipmap/app_icon" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:background="@drawable/chat_1"
+            android:layout_weight="8">
+
+            <TextView
+                android:id="@+id/txtname1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Ashley Tisdale"
+                android:textColor="@color/blackColor"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtmssg1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txtname1"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_2"
+                android:inputType="textMultiLine"
+                android:paddingRight="@dimen/dp_30"
+                android:text="hello how r u"
+                android:textColor="@color/blackColor"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/txttime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txtmssg1"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="5:30pm"
+                android:textSize="@dimen/sp_12"  />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutChat2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:layout_weight="8"
+            android:background="@drawable/chat_2">
+
+            <TextView
+                android:id="@+id/txtname2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Ashley Tisdale"
+                android:textColor="@color/blackColor"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtmssg2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txtname2"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_2"
+                android:inputType="textMultiLine"
+                android:paddingRight="@dimen/dp_30"
+                android:text="hello how r u"
+                android:textColor="@color/blackColor"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/txttime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txtmssg2"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="5:30pm"
+                android:textSize="@dimen/sp_12" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutprofile2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_weight="1.7">
+
+            <com.app.baccoon.utils.CircleImageView
+
+                android:id="@+id/imgprofile2"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:src="@mipmap/app_icon" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

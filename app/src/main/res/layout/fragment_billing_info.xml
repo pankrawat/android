@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sp_20"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".95"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/marginLarge"
+                android:paddingRight="@dimen/marginLarge"
+                android:paddingTop="@dimen/marginLarge"
+                android:text="@string/deloptions"
+                android:textColor="@color/blackColor"
+                android:textSize="@dimen/sp_16" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/marginLarge"
+                android:background="@color/colorPrimary" />
+        </LinearLayout>
+
+
+
+        <View android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight=".3" />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/dp_6"
+            android:layout_weight=".3">
+
+            <TextView
+
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_gravity="center"
+
+
+                android:background="@drawable/round_corner_border"
+                android:paddingBottom="@dimen/dp_6"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_8"
+
+                android:paddingTop="@dimen/dp_6"
+                android:text="Edit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_10" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:padding="@dimen/marginLarge"
+            android:text="@string/lblPutByBuyer"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_weight="2"
+            android:textSize="@dimen/sp_20"
+            android:visibility="invisible" />
+
+        <ToggleButton
+            android:id="@+id/togglebuyer"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="1.3"
+            android:background="@drawable/toggle_selector"
+            android:textOff=""
+            android:textOn="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.2"
+            android:padding="@dimen/marginLarge"
+            android:text="@string/lblDHL"
+            android:textSize="@dimen/sp_14" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:layout_weight="3.8">
+
+            <EditText
+                android:id="@+id/txtDHL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+                android:gravity="left"
+                android:maxLength="4"
+                android:textColorHint="@color/colorHint"
+                android:hint="0"
+                android:paddingLeft="@dimen/dp_6"
+                android:paddingRight="@dimen/dp_6"
+
+                android:textSize="@dimen/sp_14"
+                android:enabled="false"
+
+                android:textColor="@color/loginTextColor"
+                android:visibility="visible" />
+
+           <!-- <EditText
+                android:id="@+id/et_DHL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+                android:gravity="left"
+                android:singleLine="true"
+                android:maxLength="4"
+                android:text="0"
+                android:background="@null"
+                android:textColorHint="@color/colorHint"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_8"
+              android:inputType="number"
+android:enabled="false"
+
+                android:textColor="@color/blackColor"
+android:visibility="gone"
+                android:textSize="@dimen/sp_14" />-->
+
+
+        </RelativeLayout>
+
+        <ToggleButton
+            android:id="@+id/toggledhl"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="1.3"
+            android:background="@drawable/toggle_selector"
+            android:textOff=""
+            android:textOn="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.2"
+            android:padding="@dimen/marginLarge"
+            android:text="@string/lblPOST"
+            android:textSize="@dimen/sp_14" />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="3.8">
+        <EditText
+            android:id="@+id/txtPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="left"
+            android:paddingLeft="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_6"
+            android:inputType="number"
+            android:hint="0"
+            android:textColorHint="@color/colorHint"
+            android:textColor="@color/loginTextColor"
+            android:textSize="@dimen/sp_14"
+            android:visibility="visible"  />
+
+           <!-- <EditText
+                android:id="@+id/et_Post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+                android:gravity="left"
+                android:background="@null"
+                android:textColorHint="@color/colorHint"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_8"
+                android:singleLine="true"
+                android:maxLength="4"
+                android:inputType="number"
+      android:text="0"
+                android:textColor="@color/blackColor"
+                android:visibility="gone"
+                android:textSize="@dimen/sp_14"
+                android:enabled="false"/>-->
+
+
+        </RelativeLayout>
+
+        <ToggleButton
+            android:id="@+id/togglepost"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="1.3"
+            android:background="@drawable/toggle_selector"
+            android:textOff=""
+            android:textOn="" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</ScrollView>
+

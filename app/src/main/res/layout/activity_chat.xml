@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/chatlist"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/marginLarge"
+        android:layout_width="match_parent"
+        android:background="@color/grey"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:transcriptMode="alwaysScroll"
+        android:stackFromBottom="true"
+        android:paddingBottom="@dimen/dp_30"
+        android:layout_weight="9.6"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight=".4"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/sp_18"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/txtmsg"
+                android:paddingLeft="@dimen/dp_8"
+                android:layout_height="match_parent"
+                android:layout_weight="7.8"
+                android:layout_width="0dp"
+
+                android:layout_marginBottom="@dimen/sp_6"
+                android:background="@android:color/transparent"
+                android:hint="Enter any message"/>
+
+            <TextView
+                android:id="@+id/btnsend"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2.2"
+                android:layout_marginRight="@dimen/sp_10"
+                android:background="@drawable/round_corner_border"
+                android:gravity="center"
+                android:paddingTop="6dp"
+                android:paddingBottom="8dp"
+                android:text="SEND"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+<!--
+<LinearLayout
+android:layout_height="match_parent"
+android:layout_width="0dp"
+android:layout_weight="7.8"
+android:background="@color/white">
+
+<EditText
+    android:id="@+id/txtmsg"
+    android:paddingLeft="@dimen/dp_8"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="@dimen/sp_6"
+    android:background="@android:color/transparent"
+    android:hint="Enter any message"/>
+
+</LinearLayout>
+
+<TextView
+android:id="@+id/btnsend"
+android:layout_height="wrap_content"
+android:layout_width="0dp"
+android:layout_weight="2.2"
+android:layout_marginRight="@dimen/sp_10"
+android:background="@drawable/round_corner_border"
+android:gravity="center"
+android:paddingTop="6dp"
+android:paddingBottom="8dp"
+android:text="SEND"
+android:textColor="@color/white"
+android:textSize="@dimen/sp_14" />-->

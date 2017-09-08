@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.app.baccoon.activity.InfoActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <RelativeLayout
+            android:id="@+id/imgLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.3">
+
+
+
+            <ImageView
+                android:id="@+id/backgroundProfilePic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@mipmap/gradient"
+                android:scaleType="fitXY"
+                android:src="@mipmap/bg"
+                />
+
+
+            <ImageView
+                android:id="@+id/gradiant"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha=".6"
+                android:scaleType="fitXY"
+                android:src="@mipmap/gradient" >
+
+            </ImageView>
+
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="@dimen/dp_10"
+
+                android:src="@mipmap/back" />
+
+         <RelativeLayout
+             android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+             android:layout_height="wrap_content">
+
+            <com.app.baccoon.utils.CircleImageView
+                android:id="@+id/circularProfilePic"
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+
+
+                android:src="@mipmap/profilepic" />
+
+
+
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/circularProfilePic"
+                android:layout_centerHorizontal="true"
+                android:text="xxxx xxxx"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtName"
+                android:layout_centerHorizontal="true"
+                android:text="example@gmail.com"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12" />
+
+         </RelativeLayout>
+        </RelativeLayout>
+
+
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.80"
+            android:orientation="vertical"
+            android:weightSum="10"
+            >
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                app:tabMode="fixed"
+                app:tabGravity="fill"
+                app:tabTextAppearance="@style/MyCustomTabText"
+                app:tabTextColor="@color/colorHint"
+                app:tabSelectedTextColor="@color/vk_black"
+                style="@style/MyCustomTabLayout"
+                app:tabIndicatorColor="@color/colorPrimary"
+                />
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_weight="8.4"
+                android:background="#FFFFFF"
+                android:layout_height="0dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_weight="2.0"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_2"
+                android:id="@+id/lblCurBal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+
+                android:text="@string/lblCurrentBal"
+                android:textColor="@color/lightGreen"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/txtBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:text="\u20B9 1,20,489"
+                android:textColor="@color/vk_black"
+                android:textSize="@dimen/sp_18" />
+
+
+            <TextView
+                android:id="@+id/btnPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/marginLeftXLarge"
+                android:layout_marginRight="@dimen/marginLeftXLarge"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:paddingTop="@dimen/marginSmall"
+                android:paddingBottom="@dimen/marginSmall"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/round_corner_border"
+                android:text="Payment Option"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtNormalSize" />
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

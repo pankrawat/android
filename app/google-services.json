@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "219483859213",
+    "project_id": "baccoon-1470737776673"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219483859213:android:42ed7ea913d7307e",
+        "android_client_info": {
+          "package_name": "com.app.baccoon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219483859213-1m2ga51n1m249bh6t7iqg8l48vh7pomp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.baccoon",
+            "certificate_hash": "67CACBB4E8626CC1D4D1C1F7F30AA92344D408B0"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnU0cFUi6hC_R5j4yGR18HQxXo_6wStNY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

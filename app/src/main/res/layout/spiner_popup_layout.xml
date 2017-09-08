@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/background_light">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="1dp"
+        android:background="@color/white">
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/marginVerySamll">
+            <TextView
+                android:id="@+id/txtCompany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginLarge"
+                android:layout_marginRight="@dimen/marginLarge"
+                android:paddingBottom="@dimen/marginSmall"
+                android:text="Company"
+                android:textColor="@color/vk_black"
+
+
+                android:layout_marginTop="@dimen/marginLarge"
+                android:textSize="@dimen/txtNormalSize"
+
+
+                />
+
+            <TextView
+                android:id="@+id/txtPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginLarge"
+                android:layout_marginRight="@dimen/marginLarge"
+                android:paddingBottom="@dimen/marginSmall"
+                android:text="Person"
+                android:textColor="@color/vk_black"
+
+
+                android:layout_marginTop="@dimen/marginSmall"
+                android:textSize="@dimen/txtNormalSize"
+
+
+                />
+
+
+            <TextView
+                android:id="@+id/txtPerson_dash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginLarge"
+                android:layout_marginRight="@dimen/marginLarge"
+                android:paddingBottom="@dimen/marginSmall"
+                android:text="Close"
+                android:textColor="@color/vk_black"
+
+
+                android:layout_marginTop="@dimen/marginSmall"
+                android:textSize="@dimen/txtNormalSize"
+
+
+                />
+
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+

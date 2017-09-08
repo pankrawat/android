@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/dp_4"
+    android:layout_marginTop="@dimen/marginSmall"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_6"
+    android:layout_marginLeft="@dimen/dp_6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/default_bg"
+
+
+            />
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <TextView android:textSize="@dimen/sp_14"
+        android:textColor="@color/lightGreen"
+        android:id="@+id/txtSellerName"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Gopal Gupta"
+        android:layout_marginLeft="@dimen/marginSmall"
+        android:layout_marginTop="@dimen/dp_4"
+
+        />
+
+    <RelativeLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginSmall"
+        android:layout_marginTop="@dimen/dp_4"
+
+        >
+
+
+
+
+        <ImageView
+            android:id="@+id/phone"
+
+
+            android:layout_height="wrap_content"
+
+            android:layout_width="wrap_content"
+
+android:layout_centerVertical="true"
+
+
+
+
+            android:src="@mipmap/phone"
+            />
+
+
+        <TextView
+            android:layout_toRightOf="@+id/phone"
+            android:textColor="@color/colorPrice"
+            android:id="@+id/txtPhone"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_width="wrap_content"
+            android:text="+91 - 9456632464"
+            android:textSize="@dimen/sp_10"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

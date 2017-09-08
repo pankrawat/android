@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/parent"
+    android:orientation="vertical">
+
+
+    <Spinner
+        android:id="@+id/spinerCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="@dimen/marginLeftLarge"
+        android:layout_marginRight="@dimen/marginLeftLarge"
+        android:layout_marginTop="@dimen/marginLeftXLarge"
+        android:layout_marginBottom="@dimen/marginLarge"
+        android:background="@drawable/spiner_filter_selector"
+        android:paddingBottom="@dimen/marginSmall" />
+    <Spinner
+        android:id="@+id/spinerPlanPeriod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/marginLarge"
+        android:layout_marginLeft="@dimen/marginLeftLarge"
+        android:layout_marginRight="@dimen/marginLeftLarge"
+        android:layout_marginBottom="@dimen/marginLarge"
+        android:paddingBottom="@dimen/marginSmall"
+        android:background="@drawable/spiner_filter_selector"
+        />
+    <Spinner
+        android:id="@+id/spinerPlanSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/marginLarge"
+
+        android:layout_marginLeft="@dimen/marginLeftLarge"
+        android:layout_marginRight="@dimen/marginLeftLarge"
+        android:layout_marginTop="@dimen/marginLarge"
+        android:background="@drawable/spiner_filter_selector"
+        android:paddingBottom="@dimen/marginSmall" />
+
+    <TextView
+        android:id="@+id/txtlable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinerCountry"
+        android:layout_marginLeft="@dimen/marginLeftLarge"
+        android:layout_marginRight="@dimen/marginLeftLarge"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_gravity="center_horizontal"
+        android:text="Full Time Membership Cost"
+        android:gravity="center"
+        android:textColor="@color/colorHint"
+        android:textSize="@dimen/sp_16"
+
+
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/txtAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinerCountry"
+        android:layout_marginLeft="@dimen/marginLeftLarge"
+        android:layout_marginRight="@dimen/marginLeftLarge"
+        android:layout_marginTop="@dimen/dp_18"
+        android:background="@drawable/green_rect_border"
+android:layout_gravity="center_horizontal"
+        android:text="USS 0"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_24"
+        android:paddingRight="@dimen/dp_24"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_12"
+android:minWidth="125dp"
+android:singleLine="true"
+
+        android:textColor="@color/lightGreen"
+
+        android:textSize="@dimen/txtNormalSize"
+
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/txtPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinerCountry"
+        android:layout_marginLeft="@dimen/marginLeftLarge"
+        android:layout_marginRight="@dimen/marginLeftLarge"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/green_rect_border"
+android:layout_gravity="center_horizontal"
+
+android:text="0 Pic"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_24"
+        android:paddingRight="@dimen/dp_24"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_12"
+        android:minWidth="125dp"
+
+
+
+        android:textColor="@color/lightGreen"
+
+        android:textSize="@dimen/txtNormalSize"
+
+
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/btnPay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonHeight"
+
+        android:layout_below="@+id/txtAmount"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/round_corner_border"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/marginLeftLarge"
+        android:layout_marginRight="@dimen/marginLeftLarge"
+
+        android:text="@string/lblPay"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txtNormalSize" />
+
+
+
+</LinearLayout>
+
+

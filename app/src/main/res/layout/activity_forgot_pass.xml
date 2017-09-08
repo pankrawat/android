@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+
+    android:background="@mipmap/forgot_bg"
+    android:paddingBottom="@dimen/marginLarge"
+    android:paddingTop="@dimen/marginLarge"
+    tools:context=".activity.SignupActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/marginLarge"
+        android:layout_marginTop="@dimen/marginLarge"
+        >
+    </View>
+
+    <ImageView
+        android:layout_marginTop="@dimen/marginLarge"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="@dimen/marginLarge"
+        android:layout_marginRight="@dimen/marginLeftXLarge"
+        android:src="@mipmap/oops"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginLeftXLarge"
+            android:layout_marginRight="@dimen/marginLeftXLarge"
+            android:layout_marginTop="@dimen/marginLarge"
+            android:background="@drawable/only_bottom_border_forgotpass"
+            android:hint="@string/email"
+            android:paddingBottom="@dimen/marginSmall"
+android:layout_gravity=""
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:focusable="true"
+
+            android:textSize="@dimen/txtNormalSize"
+            android:inputType="textEmailAddress"
+android:layout_marginBottom="@dimen/marginLarge"
+            android:singleLine="true"
+
+
+            >
+
+
+            <requestFocus/>
+</EditText>
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/marginLarge"
+
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txtNormalSize"
+            android:layout_marginLeft="@dimen/marginLeftXLarge"
+            android:layout_marginTop="@dimen/marginLarge"
+            android:paddingTop="@dimen/marginSmall"
+            android:paddingBottom="@dimen/marginSmall"
+android:gravity="center"
+
+            android:layout_marginRight="@dimen/marginLeftXLarge"
+            android:textColor="@color/vk_black"
+            android:background="@drawable/round_corner_border_forgotpass"
+            android:text="@string/lblSubmit"
+            android:id="@+id/btnSubmit" />
+
+
+    </LinearLayout>
+</LinearLayout>
+
+
+    </LinearLayout>
+
+

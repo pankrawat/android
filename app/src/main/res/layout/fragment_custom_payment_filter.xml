@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/marginLeftXLarge"
+        android:layout_marginBottom="@dimen/marginLeftXLarge" />
+
+    <Spinner
+        android:id="@+id/spinerCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/marginLarge"
+        android:layout_marginLeft="@dimen/marginLeftLarge"
+        android:layout_marginRight="@dimen/marginLeftLarge"
+        android:layout_marginTop="@dimen/marginLarge"
+        android:background="@drawable/spiner_filter_selector"
+        android:paddingBottom="@dimen/marginSmall" />
+
+
+    <EditText
+        android:id="@+id/txtAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinerCountry"
+        android:layout_marginLeft="@dimen/marginLeftLarge"
+        android:layout_marginRight="@dimen/marginLeftLarge"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/only_bottom_border_black"
+        android:hint="Amount"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:maxLength="7"
+        android:paddingBottom="@dimen/marginSmall"
+        android:singleLine="true"
+        android:textColor="@color/vk_black"
+        android:textColorHint="#808080"
+        android:textSize="@dimen/txtNormalSize"
+
+
+        />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_34" />
+
+    <TextView
+        android:id="@+id/btnPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/txtAmount"
+        android:layout_margin="@dimen/marginLeftXLarge"
+        android:background="@drawable/round_corner_border"
+        android:gravity="center"
+
+        android:paddingBottom="@dimen/marginSmall"
+        android:paddingTop="@dimen/marginSmall"
+        android:text="@string/lblPay"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txtNormalSize" />
+
+
+</LinearLayout>
+
+

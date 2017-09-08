@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/sp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttonHeight"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="Invite a Friend via..."
+            android:textSize="@dimen/marginLess" />
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/grey"
+            android:layout_height="1dp"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/marginLarge"
+
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/facebookshare"
+                android:id="@+id/fb_view" />
+            <TextView
+                android:layout_marginTop="@dimen/sp_6"
+                android:layout_width="match_parent"
+                android:text="Facebook"
+                android:textSize="@dimen/sp_12"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/twitter"
+                    android:id="@+id/twiter_view" />
+                <TextView
+                    android:layout_marginTop="@dimen/sp_6"
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/sp_12"
+
+                    android:text="Twitter"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/gplus"
+                    android:id="@+id/google_plus" />
+                <TextView
+                    android:layout_marginTop="@dimen/sp_6"
+                    android:layout_width="match_parent"
+                    android:text="Google Plus"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp_12"
+
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/marginLarge"
+        android:layout_marginBottom="@dimen/marginLarge"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+
+            android:gravity="center"
+
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/mailshare"
+                android:id="@+id/gmail_view" />
+            <TextView
+                android:layout_marginTop="@dimen/sp_6"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="Gmail"
+                android:textSize="@dimen/sp_12"
+
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:textSize="@dimen/sp_12"
+
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/chatshare"
+                android:id="@+id/whatsapp_view" />
+            <TextView
+                android:layout_marginTop="@dimen/sp_6"
+                android:layout_width="match_parent"
+                android:text="Whatsapp"
+                android:textSize="@dimen/sp_12"
+
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            android:layout_height="wrap_content">
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

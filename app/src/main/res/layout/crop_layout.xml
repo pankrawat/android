@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/layout_root"
+                android:background="@color/base"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+         >
+
+
+
+    <com.app.baccoon.utils.CropImageView
+        android:id="@+id/cropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:backgroundColor="@color/blackColor"
+        custom:handleColor="@color/whiteColor"
+        custom:guideColor="@color/whiteColor"
+        custom:overlayColor="@color/overlay"
+        custom:frameColor="@color/whiteColor"
+        custom:handleSize="8dp"
+        custom:touchPadding="8dp"
+        custom:handleShowMode="show_always"
+        custom:guideShowMode="show_on_touch"
+        custom:minFrameSize="50dp"
+        custom:frameStrokeWeight="1dp"
+        custom:guideStrokeWeight="1dp"
+        >
+        </com.app.baccoon.utils.CropImageView>
+       
+    <LinearLayout
+        android:id="@+id/cropFooter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonHeight"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:id="@+id/buttonCancleCrop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/blackColor"
+            android:background="@drawable/ractbutton_selector"
+            />
+        <View 
+            android:layout_width="@dimen/seperatorHeight"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/marginLess"
+            android:paddingTop="@dimen/marginLess"
+            android:background="@color/loginTextColor"
+            />
+        
+         <Button 
+            android:id="@+id/rotate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Rotate"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="@color/blackColor"
+            android:background="@drawable/ractbutton_selector"
+            />
+          <View 
+            android:layout_width="@dimen/seperatorHeight"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/marginLess"
+            android:paddingTop="@dimen/marginLess"
+            android:background="@color/loginTextColor"
+            />
+
+        <Button
+            android:id="@+id/buttonSaveImage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/blackColor"
+            android:background="@drawable/ractbutton_selector"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout 
+         android:id="@+id/imageProgress"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+          android:visibility="invisible"
+        >
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
+</RelativeLayout>

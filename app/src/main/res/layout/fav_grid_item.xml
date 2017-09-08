@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_marginRight="@dimen/dp_6"
+        android:layout_marginTop="@dimen/marginSmall"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/default_bg"
+
+
+                />
+
+            <!-- likes layout-->
+
+
+        </RelativeLayout>
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.9"
+
+            >
+        <TextView
+            android:id="@+id/txtProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginSmall"
+            android:text="Puma Shoes"
+            android:textColor="@color/lightGreen"
+            android:textSize="@dimen/sp_18" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginSmall">
+
+
+            <TextView
+                android:id="@+id/ru"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="\u20B9"
+                android:textColor="@color/colorPrice" />
+
+
+            <TextView
+                android:id="@+id/txtProductPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:layout_toRightOf="@+id/ru"
+                android:text="1,500"
+                android:textColor="@color/colorPrice" />
+
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/txtProductPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginSmall"
+            android:layout_toRightOf="@+id/ru"
+            android:maxLines="2"
+            android:text="New Delhi"
+            android:textColor="@color/colorLocation" />
+
+</LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/favImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+           android:layout_weight="0.1"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_gravity="center"
+
+
+            android:scaleType="center"
+            android:src="@mipmap/ystar"
+
+
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

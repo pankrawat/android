@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="115dp"
+
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_6"
+        android:layout_marginBottom="@dimen/dp_6"
+
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:padding="@dimen/marginSmall">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+
+                <ImageView
+                    android:id="@+id/productImage"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/default_bg" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txtTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="@dimen/dp_6"
+                        android:layout_marginRight="@dimen/dp_40"
+                        android:text="Vintage Clock"
+
+                        android:textColor="@color/vk_black"
+                        android:textSize="@dimen/sp_14"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/txtDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtTitle"
+                        android:layout_marginLeft="@dimen/dp_6"
+                        android:layout_marginRight="@dimen/dp_40"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:lines="2"
+                        android:text="This prdvhb hbdv j je hbve jv jbv  hsdbhweyfuw ejbv  jvb"
+
+                        android:textColor="@color/colorHint"
+                        android:textSize="@dimen/sp_10"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+
+
+                        android:layout_below="@+id/txtDetails"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_6"
+
+
+                            android:singleLine="true"
+                            android:text="Buyer :"
+
+                            android:textColor="@color/colorHint"
+                            android:textSize="@dimen/sp_12"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/txtBuyer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center_vertical"
+
+
+                            android:layout_marginLeft="@dimen/dp_2"
+                            android:singleLine="true"
+                            android:text="Gopal Gupta"
+
+                            android:textColor="@color/vk_black"
+                            android:textSize="@dimen/sp_12"
+                            android:textStyle="normal"
+
+                            />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp_8"
+                            android:layout_marginLeft="@dimen/dp_8"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:background="@color/colorHint" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_10"
+
+
+                            android:gravity="bottom"
+                            android:singleLine="true"
+                            android:text="Contact :"
+
+                            android:textColor="@color/colorHint"
+                            android:textSize="@dimen/sp_12"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/txtMobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center_vertical"
+
+
+                            android:layout_marginLeft="@dimen/dp_2"
+                            android:singleLine="true"
+                            android:text="+91-9456632464"
+
+                            android:textColor="@color/vk_black"
+                            android:textSize="@dimen/sp_12"
+                            android:textStyle="normal"
+
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <!--/>-->
+
+            <!-- likes layout-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginTop="@dimen/marginLarge"-->
+            <!--android:background="@color/vk_black"-->
+            <!--android:orientation="horizontal">-->
+
+
+            <!--<ImageView-->
+            <!--android:id="@+id/fav"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="@dimen/dp_2"-->
+            <!--android:layout_marginLeft="@dimen/dp_6"-->
+            <!--android:layout_marginTop="@dimen/dp_2"-->
+            <!--android:src="@mipmap/heart"-->
+
+
+            <!--/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/txtFav"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+
+            <!--android:layout_marginLeft="@dimen/dp_4"-->
+            <!--android:layout_marginRight="@dimen/dp_6"-->
+
+            <!--android:gravity="center"-->
+            <!--android:text="100"-->
+            <!--android:textColor="@color/white"-->
+
+            <!--/>-->
+
+            <!--</LinearLayout>-->
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.LinearLayoutCompat
+        android:elevation="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/dp_16"
+        android:background="@mipmap/price"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/dp_8"
+
+
+
+
+        android:visibility="visible">
+
+
+        <TextView
+
+            android:id="@+id/txtRu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_2"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginTop="@dimen/dp_2"
+            android:text="\u20B9"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"
+
+
+
+
+            />
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_marginRight="@dimen/dp_6"
+
+            android:gravity="center"
+            android:text="100"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"
+
+            />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+</RelativeLayout>
